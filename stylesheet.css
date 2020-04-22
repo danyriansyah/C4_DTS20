@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Lucida Grande";
+  font-family: monospace;
 }
 
 a {
@@ -112,8 +112,10 @@ header {
 }
 
 .logo {
-  width: 124px;
+  width: 150px;
   margin-top: 20px;
+  color:#fff;
+  font-size:24px;
 }
 
 .header-left {
