@@ -25,6 +25,7 @@ a {
   padding: 180px 0 100px 50px;
   background-color: #16817a;
   color: white;
+  height: 480px
 }
 
 .top-wrapper h1 {
@@ -42,19 +43,19 @@ a {
 
 @keyframes animate_1{
   0%{
-    content: 'C4';
-  }
-  25%{
     content: 'Curiosity';
   }
-  50%{
+  25%{
     content: 'Creativity';
   }
-  75%{
+  50%{
     content: 'Cleverness';
   }
-  100%{
+  75%{
     content: 'Capability';
+  }
+  100%{
+    content: 'Curiosity';
   }
 }
 
