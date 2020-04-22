@@ -22,18 +22,40 @@ a {
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
+  padding: 180px 0 100px 50px;
+  background-color: #16817a;
   color: white;
-  text-align: center;
 }
 
 .top-wrapper h1 {
-  opacity: 0.7;
   font-size: 45px;
   letter-spacing: 5px;
-  margin-bottom: 10px;
+  margin: 0px;
+  font-size:45px;
+  text-shadow: 2px 2px 0 #024249;
+}
+
+.top-wrapper span:before{
+  content: '';
+  animation: animate_1 infinite 10s;
+}
+
+@keyframes animate_1{
+  0%{
+    content: 'C4';
+  }
+  25%{
+    content: 'Curiosity';
+  }
+  50%{
+    content: 'Creativity';
+  }
+  75%{
+    content: 'Cleverness';
+  }
+  100%{
+    content: 'Capability';
+  }
 }
 
 .top-wrapper p {
