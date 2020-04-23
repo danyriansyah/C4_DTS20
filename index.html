@@ -11,22 +11,35 @@
 </head>
 <body>
     <!--Code di bawah Dany yang develop-->
-    <header>
+    <header id="nav">
       <div class="container">
         <div class="header-left">
           <h1 class="logo">PROJECT-C4</h1>
         </div>
         <span class="fa fa-bars menu-icon"></span>
         <div class="header-right">
-          <a href="#" class="login">Log in</a>
+          <a href="#_" class="login">CONTACT US</a>
         </div>
       </div>
     </header>
     <div class="top-wrapper">
       <div class="container">
-        <h1>Projects made with C4</h1> <h1><span></span></h1>
+        <h1>Projects made with C4</h1> <h1><span class="animation_1"></span></h1>
       </div>
     </div>
+
+    <script type="text/javascript">
+      var nav = document.getElementById('nav');
+        window.onscroll = function(){
+          if(window.pageYOffset > 10){
+            nav.style.background = "rgba(34, 49, 52, 0.9)";
+          }
+          else{
+            nav.style.background = "transparent";
+          }
+        }
+
+    </script>
     <!--Code Dany sampai sini aja-->
 
     <!--Code di bawah Deni yang develop-->
@@ -77,7 +90,7 @@
     <!--Code Bayu sampai sini aja-->
 
     <!--Code di bawah Dirga yang develop-->
-    <div class="message-wrapper">
+    <div id="_" class="message-wrapper">
       <div class="container">
         <div class="heading">
           <h2>Ready to become an awesome programmer?</h2>
