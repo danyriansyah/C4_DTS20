@@ -27,43 +27,48 @@ a {
 /*code css di atas ini berlaku buat semua (global) */
 
 /*Bagian Deskripsi tim*/
+
 .top-wrapper {
   padding: 180px 0 100px 50px;
   background-color: #00a651;
   color: white;
   height: 480px;
   text-align: center;
+  border-bottom-right-radius: 100px;
 }
 
 .top-wrapper h1 {
   font-size: 45px;
   letter-spacing: 5px;
   margin: 0px;
-  font-size:45px;
   text-shadow: 2px 2px 0 #024249;
 }
 
 .top-wrapper span:before{
   content: '';
-  animation: animate_1 infinite 10s;
+  animation: animate_1 infinite 5s;
 }
 
 @keyframes animate_1{
   0%{
-    content: 'Curiosity';
+    content: 'Curiosity,';
   }
   25%{
-    content: 'Creativity';
+    content: 'Curiosity, Creativity,';
   }
   50%{
-    content: 'Cleverness';
+    content: 'Curiosity, Creativity, Cleverness,';
   }
   75%{
-    content: 'Capability';
+    content: 'Curiosity, Creativity, Cleverness, Capability.';
   }
   100%{
-    content: 'Curiosity';
+    content: 'Curiosity,';
   }
+}
+
+.animation_1{
+  font-size:24px;
 }
 
 .top-wrapper p {
@@ -100,10 +105,10 @@ a {
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
   position :fixed;
   top: 0;
   z-index: 10;
+  transition: 0.5s;
 }
 
 .logo {
@@ -224,4 +229,34 @@ footer p {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
+}
+
+/*Query media responsiv di bawah*/
+
+@media (max-width:1000px){
+/*Bagian Deskripsi Tim*/
+  .top-wrapper{
+    padding: 120px 20px 0px 20px;
+    height: 450px;
+  }
+  .top-wrapper h1 {
+  font-size: 40px;
+  }
+  .animation_1{
+  font-size:24px;
+  }
+}
+
+@media (max-width:670px){
+/*Bagian Deskripsi Tim*/
+  .top-wrapper{
+    padding: 100px 15px 0px 15px;
+    height: 450px;
+  }
+  .top-wrapper h1 {
+  font-size: 35px;
+  }
+  .animation_1{
+  font-size:20px;
+  }
 }
