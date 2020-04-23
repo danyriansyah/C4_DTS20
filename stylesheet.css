@@ -245,6 +245,10 @@ footer {
   .animation_1{
   font-size:24px;
   }
+  .lesson {
+  float: left;
+  width: 50%;
+  }
 }
 
 @media (max-width:670px){
@@ -258,5 +262,9 @@ footer {
   }
   .animation_1{
   font-size:20px;
+  }
+  .lesson {
+  float: left;
+  width: 100%;
   }
 }
