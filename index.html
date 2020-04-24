@@ -12,15 +12,53 @@
 <body>
     <!--Code di bawah Dany yang develop-->
     <header id="nav">
-      <div class="container">
-        <div class="header-left">
-          <h1 class="logo">PROJECT-C4</h1>
-        </div>
-        <span class="fa fa-bars menu-icon"></span>
-        <div class="header-right">
-          <a href="#_" class="login">CONTACT US</a>
-        </div>
-      </div>
+      <section class="nav-bar">
+
+          <div class="nav-container">
+
+            <div class="brand">
+
+              <a href="#">C4 TEAM</a>
+
+            </div>
+
+            <nav>
+
+              <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+
+              <ul class="nav-list">
+
+                <li>
+
+                  <a href="#">Home</a>
+
+                </li>
+
+                <li>
+
+                  <a href="#">portopolio</a>
+
+                </li>
+
+                <li>
+
+                  <a href="#">contact</a>
+
+                </li>
+
+                <li>
+
+                  <a href="#">About</a>
+
+                </li>
+
+              </ul>
+
+            </nav>
+
+          </div>
+
+ </section>
     </header>
     <div class="top-wrapper">
       <div class="container">
@@ -107,5 +145,44 @@
       </div>
     </footer>
     <!--Code Dirga sampai sini aja-->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+
+  (function($) {
+
+  $(function() {
+
+  $('nav ul li a:not(:only-child)').click(function(e) {
+
+  $(this).siblings('.nav-dropdown').toggle();
+
+  $('.dropdown').not($(this).siblings()).hide();
+
+  e.stopPropagation();
+
+  });
+
+  $('html').click(function() {
+
+  $('.nav-dropdown').hide();
+
+  });
+
+  $('#nav-toggle').click(function() {
+
+  $('nav ul').slideToggle();
+
+  });
+
+  $('#nav-toggle').on('click', function() {
+
+  this.classList.toggle('active');
+
+  });
+
+  });
+
+  })(jQuery);
   </body>
 </html>
