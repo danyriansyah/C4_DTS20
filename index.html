@@ -59,29 +59,10 @@
           </div>
 
  </section>
-    </header>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>Projects made with C4</h1> <h1><span class="animation_1"></span></h1>
-      </div>
-    </div>
-
-    <script type="text/javascript">
-      var nav = document.getElementById('nav');
-        window.onscroll = function(){
-          if(window.pageYOffset > 10){
-            nav.style.background = "rgba(34, 49, 52, 0.9)";
-          }
-          else{
-            nav.style.background = "transparent";
-          }
-        }
-
-    </script>
-    <!--Code Dany sampai sini aja-->
+   <!--Code Dany sampai sini aja-->
 
     <!--Code di bawah Deni yang develop-->
-     <div class="container">
+     <div class="profile">
   <div class="card">
     <div class="card-1 card-object card-object-hf"><a class="face front" href="#">
         <div class="titleS">
@@ -242,5 +223,55 @@
 
   })(jQuery);
   </Script>
+  <script>var $cards = $('.card-object'),
+  $faceButtons = $('.face');
+
+$faceButtons.on('click', flipCard);
+
+function flipCard(event) {
+  event.preventDefault();
+
+  var $btnFace = $(this),
+    $card = $btnFace.parent('.card-object');
+
+  if ($card.hasClass('flip-in')) {
+    closeCards();
+  } else {
+    closeCards();
+    openCard($card);
+  }
+
+}
+
+function closeCards() {
+  $cards.each(function() {
+    $(this)
+      .filter('.flip-in')
+      .removeClass('flip-in')
+      .queue(function() {
+        // Force reflow hack
+        var reflow = this.offsetHeight;
+        $(this)
+          .addClass('flip-out')
+          .dequeue();
+      })
+
+  });
+}
+
+function openCard($card) {
+  $card
+    .removeClass('flip-out')
+    .queue(function() {
+      // Force reflow hack
+      var reflow = this.offsetHeight;
+      $(this)
+        .addClass('flip-in')
+        .dequeue();
+    });
+
+}
+</script>
+</script>
   </body>
 </html>
