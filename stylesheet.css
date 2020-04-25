@@ -9,6 +9,7 @@ html{
 body {
   margin: 0;
   font-family: monospace;
+  background-color:#00a652;
 }
 
 a {
@@ -18,17 +19,8 @@ a {
 .clear {
   clear: left;
 }
-
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 /*code css di atas ini berlaku buat semua (global) */
 /* bagian navigasi bar by Deni*/
-.clear {
-  clear: left;
-}
 .nav-bar {
   height: 70px;
   background-color: #00a651;
@@ -107,7 +99,7 @@ nav ul li ul li a {
 .nav-dropdown {
   position: absolute;
   display: none;
-  z-index: 1;
+  z-index: 999px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -218,136 +210,13 @@ nav ul li ul li a {
 article {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 10px;
-
-/*Bagian Deskripsi tim*/
-
-.top-wrapper {
-  padding: 180px 0 100px 50px;
-  background-color: #00a651;
-  color: white;
-  height: 480px;
-  text-align: center;
-  border-bottom-right-radius: 100px;
-}
-
-.top-wrapper h1 {
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin: 0px;
-  text-shadow: 2px 2px 0 #024249;
-}
-
-.top-wrapper span:before{
-  content: '';
-  animation: animate_1 infinite 5s;
-}
-
-@keyframes animate_1{
-  0%{
-    content: 'Curiosity,';
-  }
-  25%{
-    content: 'Curiosity, Creativity,';
-  }
-  50%{
-    content: 'Curiosity, Creativity, Cleverness,';
-  }
-  75%{
-    content: 'Curiosity, Creativity, Cleverness, Capability.';
-  }
-  100%{
-    content: 'Curiosity,';
-  }
-}
-
-.animation_1{
-  font-size:24px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
-
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  position :fixed;
-  top: 0;
-  z-index: 10;
-  transition: 0.5s;
-}
-
-.logo {
-  width: 150px;
-  margin-top: 20px;
-  color:#fff;
-  font-size:24px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.menu-icon{
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
+  padding: 10px;}
 /*Bagian Profil Anggota*/
-.container {
-  background-color: #f3f3f3;
-  color: #222;
+
+.profile {
+  background-color: #00a652;
+  color: #00a652;
   position: relative;
-  height: 100%;
   list-style: none;
   margin: 0;
   padding: 0 5%;
@@ -365,7 +234,7 @@ header {
   position: relative;
   margin: 0;
   width: 100%;
-  height: 0;
+  height: 100%;
   padding: 0 0 28%;
   -webkit-perspective: 700px;
   perspective: 700px;
@@ -827,12 +696,13 @@ header {
 }
 
 @media (max-width: 650px) {
-  .container {
+  .profile {
     display: block;
+    padding: 30px 0;
   }
 
   .card {
-    height: 200px;
+    height: 470px;
   }
 
   .info-title {
