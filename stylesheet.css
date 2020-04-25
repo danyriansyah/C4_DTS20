@@ -799,3 +799,42 @@ footer {
   width: 100%;
   }
 }
+
+.Deni {
+ width: 70%;
+ display: inline-block;
+ margin-top: 20px;
+ font-size: 25px;
+ color: black;
+ align-text: center;
+}
+
+.Bayu {
+  width: 45%;
+  display: block;
+  margin-top: 20px;
+  font-size: 25px;
+  color: black;
+  align-text: center;
+  padding-left: 20px;
+}
+
+.Dany {
+  width: 45%;
+  display: block;
+  margin-top: 20px;
+  font-size: 28px;
+  color: black;
+  align-text: center;
+  padding-left: 150px;
+}
+
+.heading , .Bayu , .Dany {
+  float: left;
+}
+
+.container h1 {
+  font-style: normal;
+  font-weight: bold;
+}
+
