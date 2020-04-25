@@ -19,11 +19,63 @@ a {
 .clear {
   clear: left;
 }
+
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: .5s;
+}
 /*code css di atas ini berlaku buat semua (global) */
+
+/*css dany*/
+
+.top-wrapper {
+  padding: 180px 0 100px 50px;
+  background-color: #00a651;
+  color: white;
+  height: 480px;
+  text-align: center;
+  border-bottom-right-radius: 100px;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin: 0px;
+  text-shadow: 2px 2px 0 #024249;
+}
+
+.top-wrapper span:before{
+  content: '';
+  animation: animate_1 infinite 5s;
+}
+
+@keyframes animate_1{
+  0%{
+    content: 'Curiosity,';
+  }
+  25%{
+    content: 'Curiosity, Creativity,';
+  }
+  50%{
+    content: 'Curiosity, Creativity, Cleverness,';
+  }
+  75%{
+    content: 'Curiosity, Creativity, Cleverness, Capability.';
+  }
+  100%{
+    content: 'Curiosity,';
+  }
+}
+
+.animation_1{
+  font-size:24px;
+}
+
 /* bagian navigasi bar by Deni*/
 .nav-bar {
   height: 70px;
-  background-color: #00a651;
 }
 
 .brand {
@@ -70,14 +122,13 @@ nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  background-color: #00a651;
   color: #ffffff;
   text-decoration: none;
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #2ab1ce;
+  background: #fff;
   color: #ffffff;
 }
 
@@ -108,10 +159,10 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #00a651;
   height: 70px;
   width: 70px;
 }
+
 
 @media only screen and (max-width: 798px) {
   .nav-mobile {
@@ -726,7 +777,85 @@ article {
   }
 }
 /*Bagian Contact*/
+.top-blank {
+  padding:50px 0 30px 0;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
 
+.top-blank h1 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+/*.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}*/
+
+/*buton*/
+.box h1 {
+  border-bottom: 1px solid #dee7ec;
+}
+.bttn-blank {
+  margin: 20px 0;
+}
+
+
+
+.wa {
+  width: 100px;
+  background-color: #239b76;
+}
+
+.wa:hover {
+  width: 100px;
+  background-color: #239b99;
+}
+
+.facebook {
+  width: 100px;
+  background-color: #3b5998;
+  
+}
+.facebook:hover {
+  width: 100px;
+  background-color: #3b7198;
+  
+}
+
+.twitter {
+  width: 100px;
+  background-color: #55acee;
+}
+
+.twitter:hover {
+  width: 100px;
+  background-color: #95acea;
+}
+
+.bttn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 1;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.fn {
+  margin-right: 5px;
+}
+
+.text-contents {
+  display: inline-block;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  border-bottom: 2px solid #2f5397;
+}
 
 /*Bagian Message & Footer*/
 .message-wrapper {
