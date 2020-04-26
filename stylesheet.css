@@ -929,7 +929,7 @@ footer {
   }
 }
 
-.Deni {
+.Quote1 {
  width: 70%;
  display: inline-block;
  margin-top: 20px;
@@ -938,7 +938,7 @@ footer {
  align-text: center;
 }
 
-.Bayu {
+.Quote2 {
   width: 45%;
   display: block;
   margin-top: 20px;
@@ -948,7 +948,7 @@ footer {
   padding-left: 20px;
 }
 
-.Dany {
+.Quote3 {
   width: 45%;
   display: block;
   margin-top: 20px;
@@ -958,12 +958,33 @@ footer {
   padding-left: 150px;
 }
 
-.heading , .Bayu , .Dany {
+.heading , .Quote2 , .Quote3 {
   float: left;
 }
 
 .container h1 {
   font-style: normal;
   font-weight: bold;
+}
+
+.message {
+  font-weight: bold;
+  font-size: 20px;
+  color: blue;
+}
+
+.heading footer {
+  padding: 250px;
+}
+
+footer {
+  padding-left: 300px;
+  background-color: white;
+}
+
+.heading h1 {
+  font-family: fantasy;
+  color: green;
+  padding-right: 40px;
 }
 
