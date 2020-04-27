@@ -10,52 +10,59 @@
   <link rel="shortcut icon" href="favicon.ico" >
 </head>
 <body>
-    <!--Code di bawah Dany yang develop-->
-    <header id="nav">
-      <section class="nav-bar">
-          <div class="nav-container">
-            <div class="brand">
-              <a href="#">C4 TEAM</a>
-            </div>
-            <nav class="resposive-nav">
-              <div class="nav-mobile">
-                <a id="nav-toggle" href="#!"><span></span></a>
-              </div>
-              <ul class="nav-list">
-                <li>
-                  <a href="#profile">Profile</a>
-                </li>
-                <li>
-                  <a href="#porto">Portofolio</a>
-                </li>
-                <li>
-                  <a href="#ctc">Contact</a>
-                </li>
-                <li>
-                  <a href="#about">About</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-      </section>
-    </header>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>Projects Made with C4</h1> <h1><span class="animation_1"></span></h1>
-      </div>
+    <nav>
+    <div class="container">
+        <input id="responsive-menu" type="checkbox">
+        <label for="responsive-menu">Menu <span id="menu-icon"></span></label>
+        <div id="overlay"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul id="social-media">
+            <li>
+                <a href="#">
+                    <i class="fab fa-dribbble"></i>
+                    <span class="screen-reader-text">Dribbble</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-codepen"></i>
+                    <span class="screen-reader-text">CodePen</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                    <span class="screen-reader-text">Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="screen-reader-text">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                    <span class="screen-reader-text">Instagram</span>
+                </a>
+            </li>
+        </ul>
     </div>
+</nav>
 
-  <script type="text/javascript">
-      var nav = document.getElementById('nav');
-        window.onscroll = function(){
-          if(window.pageYOffset > 10){
-            nav.style.background = "rgba(34, 49, 52, 0.9)";
-          }
-          else{
-            nav.style.background = "transparent";
-          }
-        }
-    </script>
+<main>
+    <div class="container">
+        <h1>Responsive Menu</h1>
+    </div>
+</main>
+
    <!--Code Dany sampai sini aja-->
 
     <!--Code di bawah Deni yang develop-->
