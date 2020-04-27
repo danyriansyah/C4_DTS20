@@ -79,6 +79,12 @@ header{
     max-width: 80em;
 }
 
+.container h1{
+  text-align :center;
+  color:#fff;
+  font-size: 50px;
+}
+
 main .container {
     padding: 1em;
 }
@@ -93,8 +99,8 @@ main .container {
 }
 
 nav {
-    background: #e5e5e5;
-    color: #1d1f20;
+    background: #00a652;
+    color: #fff;
     left: 0;
     position: relative;
     top: 0;
@@ -121,7 +127,7 @@ nav label {
 #menu-icon,
 #menu-icon:before,
 #menu-icon:after {
-    background: #1d1f20;
+    background: #fff;
     border-radius: 0.05em;
     height: 0.2em;
     transition: all 0.2s ease-in-out;
@@ -173,7 +179,7 @@ nav input[type=checkbox]:checked + label #menu-icon:after {
 /*** MENU ***/
 /* Overlay */
 nav input:checked ~ #overlay {
-    background: #e5e5e5;
+    background: #00a652;
     bottom: 0;
     left: 0;
     height: 100vh;
@@ -207,7 +213,7 @@ nav ul > li {
 }
 
 nav ul a {
-    color: #1d1f20!important;
+    color: #fff!important;
     text-decoration: none;
 }
 
@@ -215,12 +221,6 @@ nav ul a:hover {
     text-decoration: underline;
 }
 
-/* Social Media */
-nav ul#social-media > li {
-    display: inline-block;
-    font-size: 1.5em;
-    margin: 0.5em;
-}
 active span:before {
   transform: rotate(45deg);
 }
