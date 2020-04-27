@@ -276,7 +276,7 @@ article {
 }
 
 .card-object.card-1 .front {
-  background: #222 url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60) 90% 35%;
+  background: #222 url(deni.jpg) 90% 35%;
   background-size: 115%;
 }
 
@@ -286,12 +286,12 @@ article {
 }
 
 .card-object.card-1 .back .avatar {
-  background: transparent url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60) 40% 20%;
+  background: transparent url(deni.jpg) 40% 20%;
   background-size: 130% 130%;
 }
 
 .card-object.card-2 .front {
-  background: #222 url(https://images.unsplash.com/photo-1533088468076-d1f6bdf16f62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60) 50% 90% no-repeat;
+  background: #222 url(bayup.jpg) 50% 90% no-repeat;
   background-size: 105%;
 }
 
@@ -301,12 +301,12 @@ article {
 }
 
 .card-object.card-2 .back .avatar {
-  background: transparent url(https://images.unsplash.com/photo-1533088468076-d1f6bdf16f62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60) 50% 50% no-repeat;
+  background: transparent url(bayup.jpg) 50% 50% no-repeat;
   background-size: 140% 140%;
 }
 
 .card-object.card-3 .front {
-  background: #222 url(https://images.unsplash.com/photo-1565114303958-364b4c007d57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60) 80% 100% no-repeat;
+  background: #222 url(dany.jpg) 80% 100% no-repeat;
   background-size: 108%;
 }
 
@@ -316,12 +316,12 @@ article {
 }
 
 .card-object.card-3 .back .avatar {
-  background: #fff url(https://images.unsplash.com/photo-1565114303958-364b4c007d57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60) 0 50% no-repeat;
+  background: #fff url(dany.jpg) 0 50% no-repeat;
   background-size: 120% 120%;
 }
 
 .card-object.card-4 .front {
-  background: #222 url(https://images.unsplash.com/photo-1534523600533-71d091d911d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60) 90% 35%;
+  background: #222 url(cewe.jpg) 90% 35%;
   background-size: 115%;
 }
 
@@ -331,12 +331,12 @@ article {
 }
 
 .card-object.card-4 .back .avatar {
-  background: transparent url(https://images.unsplash.com/photo-1534523600533-71d091d911d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60) 40% 20%;
+  background: transparent url(cewe.jpg) 40% 20%;
   background-size: 130% 130%;
 }
 
 .card-object.card-5 .front {
-  background: #222 url(https://images.unsplash.com/photo-1540728299754-c52e0b2baf1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60) 50% 90% no-repeat;
+  background: #222 url(dirga.jpg) 50% 90% no-repeat;
   background-size: 105%;
 }
 
@@ -346,7 +346,7 @@ article {
 }
 
 .card-object.card-5 .back .avatar {
-  background: transparent url(https://images.unsplash.com/photo-1540728299754-c52e0b2baf1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60) 50% 50% no-repeat;
+  background: transparent url(dirga.jpg) 50% 50% no-repeat;
   background-size: 140% 140%;
 }
 .card-object.flip-in.card-1,
