@@ -8,7 +8,7 @@ html{
 
 body {
   margin: 0;
-  font-family: Monaco;
+  font-family: cursive;
   background-color:#00a652;
 }
 
@@ -176,7 +176,14 @@ nav ul li ul li a {
   }
 
   nav ul {
-    display: none;
+    display:none;
+  }
+
+  .resposive-nav:hover ul{
+    display: block;
+    background-color:#06623b;
+    width: 100%;
+    text-align: center;
   }
 
   nav ul li {
@@ -186,7 +193,6 @@ nav ul li ul li a {
   nav ul li a {
     padding: 15px;
     line-height: 20px;
-    padding-left: 25%;
 
   }
 
@@ -206,7 +212,7 @@ nav ul li ul li a {
 
 @media screen and (min-width: 799px) {
   .nav-list {
-    display: block !important;
+    display: block;
   }
 }
 
@@ -778,16 +784,16 @@ article {
 }
 /*Bagian Contact*/
 .top-blank {
-  padding:50px 0 30px 0;
-  background-size: cover;
+  padding: 50px 100px;
   color: white;
-  text-align: center;
+  text-align:center;
 }
 
-.top-blank h1 {
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
+.top-blank h3 {
+  font-size: 25px;
+  margin: 20px 0;
+  color:#d1ffd5;
+  border-bottom: 1px solid #dee7ec;
 }
 
 /*.top-wrapper p {
@@ -796,8 +802,7 @@ article {
 }*/
 
 /*buton*/
-.box h1 {
-  border-bottom: 1px solid #dee7ec;
+.box {
 }
 .bttn-blank {
   margin: 20px 0;
@@ -806,36 +811,38 @@ article {
 
 
 .wa {
-  width: 100px;
+  width: 150px;
   background-color: #239b76;
 }
 
 .wa:hover {
-  width: 100px;
+  width: 150px;
   background-color: #239b99;
 }
 
 .facebook {
-  width: 100px;
+  width: 150px;
   background-color: #3b5998;
   
 }
 .facebook:hover {
-  width: 100px;
+  width: 150px;
   background-color: #3b7198;
   
 }
 
 .twitter {
-  width: 100px;
+  width: 150px;
   background-color: #55acee;
 }
 
 .twitter:hover {
-  width: 100px;
+  width: 150px;
   background-color: #95acea;
 }
-
+.fa {
+  margin-right: 5px;
+}
 .bttn {
   padding: 12px 24px;
   color: white;
@@ -858,10 +865,18 @@ article {
 }
 
 /*Bagian Message & Footer*/
+.heading{
+  width: 100%;
+}
+
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
+}
+.container h1 {
+  font-style: normal;
+  font-weight: bold;
 }
 
 .message {
@@ -877,56 +892,38 @@ article {
   box-shadow: none;
 }
 
-footer img {
-  width: 125px;
+.deni {
+ width: 100%;
+ display: inline-block;
+ font-size: 25px;
+ color: black;
+ align-text: center;
+ float: left;
+ box-sizing: border-box;
+ padding: 10px;
 }
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-/*Query media responsiv di bawah*/
-
-@media (max-width:1000px){
-/*Bagian Deskripsi Tim*/
-  .top-wrapper{
-    padding: 120px 20px 0px 20px;
-    height: 450px;
-  }
-  .top-wrapper h1 {
-  font-size: 40px;
-  }
-  .animation_1{
-  font-size:24px;
-  }
-  .lesson {
-  float: left;
+.bayu {
   width: 50%;
-  }
+  display: inline-block;
+  font-size: 25px;
+  color: black;
+  align-text: center;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-@media (max-width:670px){
-/*Bagian Deskripsi Tim*/
-  .top-wrapper{
-    padding: 100px 15px 0px 15px;
-    height: 450px;
-  }
-  .top-wrapper h1 {
-  font-size: 35px;
-  }
-  .animation_1{
-  font-size:20px;
-  }
-  .lesson {
+.dany {
+  width: 50%;
+  display: inline-block;
+  font-size: 28px;
+  color: black;
+  align-text: center;
   float: left;
-  width: 100%;
-  }
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom:70px;
 }
 
 .Quote1 {
@@ -970,21 +967,156 @@ footer {
 .message {
   font-weight: bold;
   font-size: 20px;
-  color: blue;
-}
-
-.heading footer {
-  padding: 250px;
 }
 
 footer {
-  padding-left: 300px;
-  background-color: white;
+  background-color: #000;
+  color:#fff;
+  padding: 20px;
+  height: 120px;
 }
 
 .heading h1 {
-  font-family: fantasy;
   color: green;
   padding-right: 40px;
 }
 
+footer img {
+  width: 125px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+.footer-left{
+  float: left;
+  width: 65%
+}
+
+.footer-right{
+  float: right;
+  width: 35%;
+}
+
+.footer-right img{
+  padding: 10px;
+}
+
+.footer-right h3{
+  float: left
+}
+/*prtofolio*/
+.portofolio {
+  margin:100px 50px;
+  color: white;
+  text-align: center;
+}
+.portofolio-logo {
+  border-top: 2px solid #5dca88;
+  border-bottom: 2px solid #5dca88;
+  margin: 50px;
+}
+
+.portofolio-logo h2{
+  font-family: cursive;
+  margin: 5px 0;
+  color: rgb(0, 56, 7);
+}
+.portofolio-logo h1 {
+  font-family: cursive;
+  color: #c8facf;
+}
+.portofolio-isi {
+  padding: 20px 50px;
+  text-align: center;
+  box-sizing:border-box;
+}
+.portofolio-img {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding-bottom: 80px;
+}
+
+.portofolio-img img{
+    max-width: 100%;
+  }
+.portofolio-img:hover {
+  opacity: 0.8;
+}
+
+
+
+/*kode halaman ukuran normal di atas ,Query media responsiv di bawah*/
+
+@media (max-width:1000px){
+/*Bagian Deskripsi Tim*/
+  .top-wrapper{
+    padding: 120px 20px 0px 20px;
+    height: 450px;
+  }
+  .top-wrapper h1 {
+  font-size: 40px;
+  }
+  .animation_1{
+  font-size:24px;
+  }
+  .lesson {
+  float: left;
+  width: 50%;
+  }
+  .footer-left{
+  width: 50%
+  }
+  .footer-right{
+  width: 50%;
+  }
+}
+
+@media (max-width:670px){
+/*Bagian Deskripsi Tim*/
+  .top-wrapper{
+    padding: 100px 15px 0px 15px;
+    height: 350px;
+  }
+  .top-wrapper h1 {
+  font-size: 35px;
+  }
+  .animation_1{
+  font-size:20px;
+  }
+  .lesson {
+  float: left;
+  width: 100%;
+  }
+  .portofolio{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .portofolio-img{
+    width: 100%;
+    padding-bottom: 10px
+  }
+  .portofolio-isi{
+    width: 100%;
+    padding: 0 0px;
+  }
+  .top-blank{
+    padding: 50px 5px;
+  }
+  footer {
+  padding: 20px;
+  height: 250px;
+  text-align:center;
+  }
+  .footer-left{
+  width: 100%
+  }
+  .footer-right{
+  width: 100%;
+  }
+  .footer-right h3{
+  float: none
+  }
+}
